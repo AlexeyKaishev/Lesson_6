@@ -1,0 +1,331 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+/*===================шрифт============================*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*============  font-family: 'Merriweather', serif;  ============================*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+/*============ font-family: 'Oswald', sans-serif; =================*/
+
+   
+/*=======================body==============================*/
+body {
+	line-height: 1;
+   padding: 0 15px;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+
+/*=================@HEADER==========================*/
+
+header   {
+   padding: 30px;
+   background: linear-gradient(45deg, rgb(0, 176, 255), rgb(159, 201, 202) 81%, rgb(249, 242, 4) 100%);
+   border-radius: 12% 88% 13% 87% / 100% 20% 100% 0% ;
+   width: 100%;
+   margin-bottom: 100px;
+}
+header .header {
+   background-color: #00FFFF;
+   height: 90px;
+   width: 70%;
+   margin: 0 auto;
+   border-radius: 12% 88% 4% 96% / 46% 52% 48% 54% ;
+}
+.header h1 {
+   font-family: 'Oswald', sans-serif;
+   text-align: center;
+   display: inline-block;
+   color: rgb(230, 11, 11);
+   text-shadow: 3px 3px 3px #000000, -3px -3px 3px #000;
+   font-weight: 600;
+   background-color: #32CD32;
+   height: 50px;
+   width: 70%;
+   margin: 20px 15%;
+   border-radius:82% 18% 83% 17% / 45% 78% 22% 55%;
+}
+
+
+/*===================NAV===============================*/
+nav {
+   margin: 15px 15% 0;
+}
+
+nav ul.navmenu {
+   margin: 0 auto;
+   max-width: 90%;
+}
+nav ul li{
+   display: inline-block;
+   margin-right: 40px;
+}
+
+nav ul.navmenu li a {
+   font-family: 'Oswald', sans-serif;
+   text-align: center;
+   font-size: 20px;
+   padding: 5px 10px;
+   display: inline-block;
+   box-shadow: -10px 6px 5px rgb(128, 128, 128);
+   border-radius: 40%;
+}
+
+/*==================MAIN========================*/
+
+/*====================GALLERY===========================*/
+
+.main-lesson {
+   font-family: 'Merriweather', serif;
+   font-size: 18px;
+}
+.gallery {
+   margin-bottom: 25px;
+}
+
+.gallery-header_header {
+   font-family: 'Oswald', sans-serif;
+   font-size: 25px;
+}
+
+.gallery-header_header h2 {
+   text-align: center;
+   padding: 15px 0;
+}
+
+.gallery-header_logo {
+
+}
+
+.logo-img {
+   margin: 0 auto;
+   max-width: 500px;
+   text-align: center;
+}
+
+.logo-img img {
+   border-top: 10px solid #ff5d00 ;
+   border-right: 10px solid #cc4c02 ;
+   border-bottom: 10px solid #ff7d31 ;
+   border-left: 10px solid #fd8946 ;
+}
+
+
+.gallery-header {
+   background: linear-gradient(45deg, rgb(236, 176, 255), rgb(153, 117, 216));
+   padding-bottom: 25px;
+   border-radius: 25%;
+   margin-bottom: 25px;
+}
+
+/*================gallery main===================*/
+
+.gallery-title h2{
+   font-size: 30px;
+   text-align: center;
+   text-shadow: -2px 2px 2px greenyellow;
+   text-transform: capitalize;
+}
+
+.gallery-title h2 .sub {
+   vertical-align: sub;
+}
+
+.gallery-title h2 .sup {
+   vertical-align: super;
+}
+
+.gallery-title h2 .br {
+   text-decoration: line-through;
+   text-shadow: none;
+}
+
+/*=====================ГАЛЕРЕЯ=================================*/
+.gallery-gallery {
+background: linear-gradient(45deg, rgb(45, 236, 0), rgb(153, 236, 225) 49%, rgb(232, 166, 7) 100%);
+border-radius: 0 20px 20px 0;
+padding: 30px;
+}
+.gallery-item {
+   display: inline-block;
+   max-width: 300px;
+   margin: 20px;
+}
+
+.gallery-item a {
+   display: inline-block;
+}
+
+.gallery-item img {
+   max-width: 300px;
+}
+
+.gallery-item.first img{
+   border-top:15px inset #ff0000 ;
+   border-right:15px inset rgb(250, 40, 40) ;
+   border-bottom:15px inset rgb(139, 39, 39) ;
+   border-left:15px inset rgb(139, 88, 88) ;
+   box-shadow: -10px 10px 5px rgb(253, 211, 211);
+
+}
+
+.gallery-item.second img { 
+   border-top:15px ridge #ffd102 ;
+   border-right:15px ridge rgb(173, 192, 0) ;
+   border-bottom:15px ridge rgb(238, 255, 0) ;
+   border-left:15px ridge rgb(184, 204, 0) ;
+   border-radius: 15px;
+   box-shadow: -10px 10px 5px rgb(154, 158, 102);
+}
+
+.gallery-item.third img {
+   border-top:15px outset #4739fd ;
+   border-right:15px outset #2c1dfd ;
+   border-bottom:15px outset #2217bd ;
+   border-left:15px outset #6459f8;
+   border-radius: 5px;
+   box-shadow: -10px 10px 5px#bebaff;
+}
+
+/*==================rain=================================*/
+
+.rain {
+   background: linear-gradient(5deg, rgb(0, 0, 0), rgb(155, 159, 165) 19%, rgb(68, 121, 163) 100%);
+   margin-bottom: 100px;
+}
+
+.rain-title {
+   padding: 30px;
+   font-size: 30px;
+   text-align: center;
+   text-shadow: -5px 5px 2px rgb(129, 131, 126);
+   text-transform: capitalize;
+}
+.rain-rain {
+}
+.drop {
+   display: inline-block;
+   margin: 30px;
+   width: 20px;
+   border: 20px solid transparent; border-bottom: 70px solid rgb(0, 55, 128);
+   border-radius: 0px 0px 50% 50%;
+}
+
+.drop:nth-child(2n) /*Замахаюсь вручную (((*/{
+   opacity: 0;
+}
+/*================PUDDLE============================*/
+
+.rain-puddle {
+   max-width: 90%;
+   height: 100px;
+   background: linear-gradient(0deg, rgb(7, 4, 255), rgb(0, 109, 255) 43%);
+   margin: 0 auto;
+   border-radius: 50% 50%;
+}
+
+
+/*===================EXTRAS==============================*/
+
+.extras {
+}
+
+
+.extras-title {
+   font-family: 'Oswald', sans-serif;
+   font-size: 22px;
+   text-align: center;
+   margin-bottom: 75px;
+}
+
+.extras-title h3 {
+   text-decoration: underline;
+   margin-bottom: 15px;
+}
+.extras-title h4 {
+   text-transform: uppercase;
+   text-decoration: none;
+   margin-bottom: 50px;
+   display: inline-block;
+   padding: 20px;
+   border-radius: 10px;
+   color: #616161;
+   background: #bababa;
+   text-shadow: #e0e0e0 1px 1px 0;
+}
+
+.circle {
+   margin: 0 auto;
+   height: 200px;
+   width: 200px;
+   border-radius: 50%;
+   background-color: rgb(98, 0, 255);
+}
+
+.par p{
+   opacity: 50%;
+
+}
+
+
+.solution .span {
+   max-width: 100px;
+   margin: 0 auto;
+}
+.solution .span span {
+   border: 4px solid black;
+}
+
+.solution .span span:hover {
+   display: inline-block;
+}
+
+.borders {
+   margin: 0 auto;
+   width: 100px;
+   height: 100px;
+   border-top:15px solid #ffd102 ;
+   border-right:15px dotted rgb(173, 192, 0) ;
+   border-bottom:15px dashed rgb(238, 255, 0) ;
+   border-left:15px double rgb(184, 204, 0) ;
+}
+
+.solution .link a {
+   text-shadow: -5px 10px 2px rgb(0, 0, 0);
+}
+
+
+/*====================FOOTER===========================*/
+
+footer {
+   padding: 50px;
+   text-align: center;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+   font-style: italic;
+   text-decoration: underline;
+   background: linear-gradient(90deg, rgb(242, 242, 247), rgb(216, 253, 0) 100%);
+}
+
+footer span.vis {
+   visibility: hidden;
+}
